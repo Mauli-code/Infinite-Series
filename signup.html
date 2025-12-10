@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up - Infinite-Series</title>
+  <link rel="stylesheet" href="signup.css" />
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="signup-nav">
+    <a href="index.html">
+      <img src="logo.png" alt="logo" class="logo" />
+    </a>
+    <a href="index.html" class="back-home">Back to Home</a>
+  </nav>
+
+  <div class="signup-box">
+    <div class="signup-header">
+      <h1>Join Infinite-Series</h1>
+      <p>Create your account</p>
+    </div>
+
+    <form id="signupForm" class="signup-form">
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" required />
+        <div id="err-fullname" class="error-msg"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required />
+        <div id="err-email" class="error-msg"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" minlength="6" required />
+        <div id="err-password" class="error-msg"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" required />
+        <div id="err-confirm" class="error-msg"></div>
+      </div>
+
+      <div class="form-options">
+        <input type="checkbox" id="terms" required />
+        <label for="terms">I agree to Terms and Conditions</label>
+      </div>
+
+      <button type="submit" class="signup-button">Create Account</button>
+
+      <div class="signup-footer">
+        <p>Already have an account? <a href="login.html">Sign in here</a></p>
+      </div>
+    </form>
+  </div>
+
+  <div id="notification-area"></div>
+
+  <script src="signup.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Infinite-Series - Home</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+
+  <header class="top">
+    <div class="brand">
+      <a href="index.html">
+        <img src="logo.png" alt="logo" class="logo" />
+      </a>
+      <h1 class="site-title">Infinite-Series</h1>
+    </div>
+
+    <nav class="top-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="books.html" class="nav-link">Books</a>
+      <a href="cart.html" class="nav-link">Cart <span id="cart-count">0</span></a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main-area">
+    <section class="hero">
+      <h2>Discover Your Next Favorite Book</h2>
+      <p>Simple site by a beginner. Clean layout and small code.</p>
+      <a href="books.html" class="btn">Browse Books</a>
+    </section>
+
+    <section class="featured">
+      <h3>Popular Books</h3>
+
+      <div class="books-grid" id="home-books-grid">
+      </div>
+
+      <div class="more-link">
+        <a href="books.html" class="btn small">View All Books</a>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h3>Newsletter</h3>
+
+      <form id="newsletter-form" class="newsletter-form">
+        <input id="newsletter-email" type="email" placeholder="you@example.com" required />
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </section>
+  </main>
+  <script src="index.js"></script>
+
+</body>
+</html>

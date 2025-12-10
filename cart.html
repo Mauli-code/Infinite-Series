@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cart - Infinite-Series</title>
+  <link rel="stylesheet" href="cart.css" />
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html">
+        <img src="logo.png" alt="logo" class="logo" />
+      </a>
+      <h1>Infinite-Series</h1>
+    </div>
+
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="cart.html" class="active">Cart</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="cart-header">
+      <h1>Your Shopping Cart</h1>
+      <p>Review books before checkout</p>
+    </section>
+
+    <section class="cart-content">
+      <div class="cart-items-section">
+        <h2>Cart Items (<span id="cart-total-items">0</span>)</h2>
+        <div class="cart-items-list" id="cart-items"></div>
+      </div>
+
+      <div class="cart-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-details">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="subtotal">$0.00</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span id="shipping">$3.99</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Tax (8%)</span>
+            <span id="tax">$0.00</span>
+          </div>
+
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <span id="total">$3.99</span>
+          </div>
+        </div>
+
+        <button id="checkout-button" class="checkout-button">Proceed to Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="notification-area"></div>
+
+  <script src="cart.js"></script>
+
+</body>
+</html>

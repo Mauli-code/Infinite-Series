@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Account - Infinite-Series</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <nav class="dashboard-nav">
+      <a href="index.html">
+        <img src="logo.png" alt="logo" class="logo" />
+      </a>
+      <a href="index.html" class="back-home">Back to Home</a>
+    </nav>
+
+    <div class="dashboard-content">
+      <aside class="sidebar">
+        <div class="profile-info">
+          <div class="profile-picture">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <h3 id="user-name">Welcome, Reader!</h3>
+          <p class="membership">Book Lover Member</p>
+        </div>
+
+        <nav class="dashboard-menu">
+          <a href="#profile" class="menu-item active" data-section="profile">Profile</a>
+          <a href="#orders" class="menu-item" data-section="orders">Orders</a>
+          <a href="#wishlist" class="menu-item" data-section="wishlist">Wishlist</a>
+          <a href="#" class="menu-item logout" id="logout-button">Logout</a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <section class="content-section active" id="profile-section">
+          <h2>Profile Information</h2>
+          <form id="profile-form" class="profile-form">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" id="profile-name" />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="profile-email" />
+            </div>
+            <button type="submit" class="save-button">Save Changes</button>
+          </form>
+        </section>
+
+        <section class="content-section" id="orders-section">
+          <h2>My Orders</h2>
+          <div id="orders-list" class="orders-list"></div>
+        </section>
+
+        <section class="content-section" id="wishlist-section">
+          <h2>My Wishlist</h2>
+          <div id="wishlist-items" class="wishlist-items"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div id="notification-area"></div>
+
+  <script src="dashboard.js"></script>
+
+</body>
+</html>
