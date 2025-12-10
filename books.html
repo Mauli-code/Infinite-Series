@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Books - Infinite-Series</title>
+  <link rel="stylesheet" href="books.css" />
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html">
+        <img src="logo.png" alt="logo" class="logo" />
+      </a>
+      <h1>Infinite-Series</h1>
+    </div>
+
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="books.html" class="active">Books</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="controls">
+      <input id="search" type="search" placeholder="Search by title or author" />
+      <select id="genre">
+        <option value="all">All Genres</option>
+        <option value="fiction">Fiction</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="mystery">Mystery</option>
+        <option value="non-fiction">Non-Fiction</option>
+      </select>
+      <select id="sort">
+        <option value="default">Sort</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+      </select>
+    </section>
+
+    <section class="books-section">
+      <div class="books-grid" id="books-grid">
+
+        <div class="book-card" data-id="b1" data-title="The Lost Library" data-author="A. Reader" data-price="12.99" data-genre="fiction">
+          <a href="book-details.html?id=b1">
+            <img src="images/book1.jpg" alt="The Lost Library" />
+          </a>
+          <div class="body">
+            <h3><a href="book-details.html?id=b1">The Lost Library</a></h3>
+            <div class="author">A. Reader</div>
+            <div class="price">$12.99</div>
+            <div class="actions">
+              <button class="add" data-id="b1" data-name="The Lost Library" data-price="12.99">Add to Cart</button>
+              <button class="wish" data-id="b1"><i class="fas fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card" data-id="b2" data-title="Starlight Journey" data-author="M. Voyager" data-price="15.50" data-genre="fantasy">
+          <a href="book-details.html?id=b2">
+            <img src="images/book2.jpg" alt="Starlight Journey" />
+          </a>
+          <div class="body">
+            <h3><a href="book-details.html?id=b2">Starlight Journey</a></h3>
+            <div class="author">M. Voyager</div>
+            <div class="price">$15.50</div>
+            <div class="actions">
+              <button class="add" data-id="b2" data-name="Starlight Journey" data-price="15.50">Add to Cart</button>
+              <button class="wish" data-id="b2"><i class="fas fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card" data-id="b3" data-title="Mystery of the Clock" data-author="C. Sleuth" data-price="9.99" data-genre="mystery">
+          <a href="book-details.html?id=b3">
+            <img src="images/book3.jpg" alt="Mystery of the Clock" />
+          </a>
+          <div class="body">
+            <h3><a href="book-details.html?id=b3">Mystery of the Clock</a></h3>
+            <div class="author">C. Sleuth</div>
+            <div class="price">$9.99</div>
+            <div class="actions">
+              <button class="add" data-id="b3" data-name="Mystery of the Clock" data-price="9.99">Add to Cart</button>
+              <button class="wish" data-id="b3"><i class="fas fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card" data-id="b4" data-title="Thoughts & Theory" data-author="D. Thinker" data-price="18.00" data-genre="non-fiction">
+          <a href="book-details.html?id=b4">
+            <img src="images/book4.jpg" alt="Thoughts & Theory" />
+          </a>
+          <div class="body">
+            <h3><a href="book-details.html?id=b4">Thoughts & Theory</a></h3>
+            <div class="author">D. Thinker</div>
+            <div class="price">$18.00</div>
+            <div class="actions">
+              <button class="add" data-id="b4" data-name="Thoughts & Theory" data-price="18.00">Add to Cart</button>
+              <button class="wish" data-id="b4"><i class="fas fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card" data-id="b5" data-title="Forest Tales" data-author="E. Green" data-price="11.25" data-genre="fiction">
+          <a href="book-details.html?id=b5">
+            <img src="images/book5.jpg" alt="Forest Tales" />
+          </a>
+          <div class="body">
+            <h3><a href="book-details.html?id=b5">Forest Tales</a></h3>
+            <div class="author">E. Green</div>
+            <div class="price">$11.25</div>
+            <div class="actions">
+              <button class="add" data-id="b5" data-name="Forest Tales" data-price="11.25">Add to Cart</button>
+              <button class="wish" data-id="b5"><i class="fas fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card" data-id="b6" data-title="Deep Magic" data-author="F. Mage" data-price="13.75" data-genre="fantasy">
+          <a href="book-details.html?id=b6">
+            <img src="images/book6.jpg" alt="Deep Magic" />
+          </a>
+          <div class="body">
+            <h3><a href="book-details.html?id=b6">Deep Magic</a></h3>
+            <div class="author">F. Mage</div>
+            <div class="price">$13.75</div>
+            <div class="actions">
+              <button class="add" data-id="b6" data-name="Deep Magic" data-price="13.75">Add to Cart</button>
+              <button class="wish" data-id="b6"><i class="fas fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="load-more-area">
+        <button id="load-more" class="load-more">Load More</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <div id="notification-area"></div>
+
+  <script src="books.js"></script>
+
+</body>
+</html>

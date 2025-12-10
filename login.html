@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Infinite-Series</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="login-nav">
+    <a href="index.html">
+      <img src="logo.png" alt="logo" class="logo" />
+    </a>
+    <a href="index.html" class="back-home">Back to Home</a>
+  </nav>
+
+  <div class="login-box">
+    <div class="login-header">
+      <h1>Welcome Back</h1>
+      <p>Sign in to your account</p>
+    </div>
+
+    <form class="login-form" id="loginForm">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required />
+        <div id="email-error" class="error-msg"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+        <div id="password-error" class="error-msg"></div>
+      </div>
+
+      <div class="form-options">
+        <label>
+          <input type="checkbox" id="rememberMe" /> Remember me
+        </label>
+        <a href="#" class="forgot-password">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="login-button">Sign In</button>
+
+      <div class="login-footer">
+        <p>Don't have an account? <a href="signup.html">Create one now</a></p>
+      </div>
+    </form>
+  </div>
+
+  <div id="notification-area"></div>
+
+  <script src="login.js"></script>
+
+</body>
+</html>
